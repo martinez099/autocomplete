@@ -1,5 +1,5 @@
-# ratelimiter
-This demonstrates an auto-complete using Redis sorted sets.
+# autocomplete
+This demonstrates an auto-complete function using Redis sorted sets.
 
 It assumes a running Redis instance on localhost:6379.
 
@@ -7,17 +7,19 @@ It assumes a running Redis instance on localhost:6379.
 - Node.js including npm
 
 ## Setup
-```npm install```
+- ```npm install```
 
 ## Run
-```npm start```
+- ```npm start```
 
 ## Test
 
-Go to localhost:3000/add?p=Martin
-Go to localhost:3000/add?p=Markus
-Go to localhost:3000/add?p=Mario
+add some pharses:
+- go to localhost:3000/add?p=Martin
+- go to localhost:3000/add?p=Markus
+- go to localhost:3000/add?p=Mario
 
-Go to localhost:3000/suggest?p=Mar
-Go to localhost:3000/suggest?p=Mari
-Go to localhost:3000/suggest?p=Mart
+get suggestions:
+- go to localhost:3000/suggest?p=Mar
+- go to localhost:3000/suggest?p=Mari
+- go to localhost:3000/suggest?p=Mart
