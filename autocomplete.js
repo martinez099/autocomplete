@@ -16,7 +16,7 @@ module.exports.add = function(redis, phrase, cb) {
 
 module.exports.suggest = function(redis, phrase, cb) {
 
-  redis.zrangebylex(KEY_NAME, '[' + phrase, '[' + phrase + '{', function(error, result) {
+  redis.zrevrangebylex(KEY_NAME, '[' + phrase + '{', '[' + phrase, function(error, result) {
     if (error) {
       cb(error);
     } else {
